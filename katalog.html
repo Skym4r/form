@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body background="images/katalog.gif">
+   <header>
+      <div class="wrapper">
+        <div class="head">
+          <div class="head_flex">
+            <table width="100%">
+              <tr>
+                  <td width="20%" align="left">
+                  <!-- Лого -->
+                      <a href="#" ><img style="border-radius: 50%;" width='30%'src="images/logo.png" alt=""></a><!-- фото -->
+                  </td>
+                  <td align="center" width="60%">
+                  <!-- Название -->
+                      <h1 style="font-size:55px; text-align: center" class="logo">CyberTechnology</h1>
+                  </td>
+                  <td align="right" width="20%">
+                      <ul>
+                        <li  style="border-radius: 35px;"><a href="login.html" class="card__add">Обратная связь</a></li>
+                      </ul>
+                  </td>  
+              </tr>
+            </table>        
+          </div>
+        </div>
+      </div>
+  </header>
+    <!-- Навигация -->
+    <nav>
+        <ul class="nav_flex">
+            <li><a href="">О нас</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Где нас найти?</a></li>
+        </ul>
+    </nav>
+    <br>
+  <main>
+  <div align='center' id="myBtnContainer"> 
+    <table>    
+      <tr> 
+        <td>                       
+          <button class="btn card__add"  onclick="filterSelection('watch')">
+            Смарт-часы
+          </button>
+        </td>
+        <td>                 
+          <button class="btn  card__add" onclick="filterSelection('phone')">
+            Смартфоны
+          </button>
+        </td>
+        <td>  
+          <button class="btn card__add" onclick="filterSelection('ipad')">
+            Планшеты
+          </button>
+        </td>
+        <td> 
+          <button  class="btn card__add" onclick="filterSelection('mac')">
+            Ноутбуки
+          </button>
+        </td>
+      </tr>
+    </table>  
+  </div>
+	
+	<section class="product">
+      <div class="product__info">
+        <div class="container">
+          <h1 class="product__title">Каталог</h1>
+          <h1 class="product__title product__title--gray">8 товаров</h1>
+        </div>
+      </div>
+      <div class="cards">
+
+      <div class="filterDiv watch">
+		    <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img src="./images/item1.jpg" alt="Apple Watch SE"/>
+            </a>
+            <div class="card__label">-15%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">25 500</div>
+              <div class="card__price card__price--common">30 000</div>
+            </div>
+          <a href="#" class="card__title">
+            Смарт-часы<br> Apple Watch SE<br> тёмная ночь
+          </a>
+          <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		  </div>
+
+		
+
+		<div class="filterDiv watch">
+		<div class="card">
+        
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/Xwatch1.jpg"
+                alt="Смарт-часы Huawei Watch GT 3"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">16 200</div>
+              <div class="card__price card__price--common">18 000</div>
+            </div>
+            <a href="#" class="card__title">
+              Смарт-часы<br> Huawei Watch GT 3<br> белый
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		</div>
+
+    <div class="filterDiv phone">
+		<div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/phone2.png"
+                alt="Apple iPhone 14 Pro Max"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">117 000</div>
+              <div class="card__price card__price--common">130 000</div>
+            </div>
+            <a href="#" class="card__title">
+             Смартфон<br> Apple iPhone 14<br> Pro Max, серый
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		</div>
+		
+
+
+		
+
+		  <div class="filterDiv phone">
+		  <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/phone6.jpg"
+                alt="OnePlus Ace Pro"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">84 600</div>
+              <div class="card__price card__price--common">94 000</div>
+            </div>
+            <a href="#" class="card__title">
+              Смартфон<br> OnePlus Ace Pro<br> черный
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		</div>
+
+
+
+		<div class="filterDiv ipad">
+		  <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/ipad3.jpg"
+                alt="Apple iPad Pro 12.9"
+              />
+            </a>
+            <div class="card__label">-5%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">117 800</div>
+              <div class="card__price card__price--common">124 000</div>
+            </div>
+            <a href="#" class="card__title">
+              Планшет<br> Apple iPad Pro 12.9<br> белый
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		</div>
+		
+    <div class="filterDiv ipad">
+		<div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/SGpad1.jpg"
+                alt="Samsung Galaxy Tab S8+"
+              />
+            </a>
+            <div class="card__label">-15%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">55 250</div>
+              <div class="card__price card__price--common">65 000</div>
+            </div>
+            <a href="#" class="card__title">
+            Планшет<br> Samsung Galaxy Tab<br> S8+D, белый</a
+            >
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+		</div>
+
+    <div class="filterDiv mac">
+		<div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/mac2.png"
+                alt="Apple MacBook Air 13"
+              />
+            </a>
+            <div class="card__label">-15%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">93 500</div>
+              <div class="card__price card__price--common">110 000</div>
+            </div>
+            <a href="#" class="card__title">
+              Apple<br> MacBook Air 13<br> золотой </a
+            >
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+    </div>
+
+
+	  <div class="filterDiv mac">
+		<div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/Lenovo.jpg"
+                alt="Lenovo Legion 7 Gen 6"
+              />
+            </a>
+            <div class="card__label">-15%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">116 450</div>
+              <div class="card__price card__price--common">137 000</div>
+            </div>
+            <a href="#" class="card__title">
+              Ноутбук<br> Lenovo Legion 7 Gen<br> 6, черный</a
+            >
+			      <button class="card__add">В корзину</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="cart" id="cart">
+      <div class="cart__image">Корзина</div>
+      <div class="cart__num" id="cart_num">0</div>
+    </button>
+  
+    
+        <div class="popup">
+      <div class="popup__container" id="popup_container">
+        <div class="popup__item">
+          <h1 class="popup__title">Оформление заказа</h1>
+        </div>
+        <div class="popup__item" id="popup_product_list">
+          <div class="popup__product">
+            <div class="popup__product-wrap">
+              <img
+                src="./images/iphone-14-pro-max-gold.png"
+                alt="Apple IPhone 14 Pro Max 256Gb"
+                class="popup__product-image"
+              />
+              <h2 class="popup__product-title">
+                Ноутбук Lenovo Legion 7 Gen 6, черный
+              </h2>
+            </div>
+            <div class="popup__product-wrap">
+              <div class="popup__product-price">137000</div>
+              <button class="popup__product-delete">&#10006;</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого</h2>
+            <output class="popup__cost-value" id="popup_cost">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Скидка</h2>
+            <output class="popup__cost-value" id="popup_discount">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого со скидкой</h2>
+            <output class="popup__cost-value" id="popup_cost_discount"
+              >0</output
+            >
+          </div>
+        </div>
+        <button class="popup__close" id="popup_close">&#10006;</button>
+      </div>
+    </div>
+
+   
+            
+    </main>
+    <div class="footer">
+        <div class="wrapper">
+             <div class="content">
+                <span class="name">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quaerat quam iusto dicta necessitatibus.
+                </span>
+                <span class="col">
+                    Адрес: Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Номер: +79999999999<br>
+                    Email: CyberTechnology@gmail.com
+                </span>
+        
+             </div>
+        </div>
+     </div>
+	  <script src="js/main.js"></script>
+</body>
