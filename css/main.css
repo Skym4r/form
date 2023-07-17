@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.head h1{
+    text-align: center;
+    
+}
+
+.footer{
+    margin-top: 300px;
+    height: 115px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Расположение элементов в верхней части */
+.head_flex{
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name{
+    font-family: courier;
+    color: rgb(123, 82, 133);
+    transition: .1s all ease-in-out;
+    text-transform: uppercase;
+}
+
+/* Основная часть шапки */
+header{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+/* Лого */
+.logo{
+    font-family: courier;
+    font-smooth: never;
+	text-align: center;
+  color: rgb(132, 52, 207);
+    -webkit-font-smoothing : none;
+}
+
+.nav_flex{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: courier;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+    font-size: 18px;
+
+}
+/* Расположение ссылок */
+.nav_flex li a{
+    padding: 10px;
+    color: rgb(132, 52, 207);;
+    transition: .1s all ease-in-out;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* Аниммация ссылок */
+.nav_flex li a:hover{
+    border-bottom: 3px solid rgb(132, 52, 207);
+}
+/* Кнопки */
+
+.filterDiv {
+  float: center;
+  /*background-color: black;*/
+  color: black;
+  width: 100%;
+  text-align: center;
+ /* margin: 2px;*/
+  display: none;
+  font-family: courier;
+}
+
+.show {
+  display: table-cell;
+  
+}
+
+.col{
+    font-family: courier;
+    padding: 25px;
+    color: rgb(123, 82, 133);
+    transition: .1s all ease-in-out;
+    font-size: 13px;
+   
+}
+
+.nav_flex{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: courier;
+    font-size: 18px;
+
+}
+
+body {
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 15px;
+ overflow: hidden;
+}
+
+
+.lock {
+  overflow-y: hidden;
+}
+
+.reset {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.product {
+  padding: 50px 0;
+}
+.product__info {
+  margin-bottom: 40px;
+}
+.product__title {
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 7px;
+}
+.product__title--gray {
+  color: #b3b3b7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+/*карточка товара*/
+.card {
+  width: 225px;
+  min-height: 350px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 35px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+}
+/*скидка товара*/
+.card .card__label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgb(132, 52, 207);
+  border-radius: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+/*Подсветка карточки товара*/
+.card:hover {
+  -webkit-box-shadow: 4px 8px 16px rgba(184, 70, 159, 0.2);
+          box-shadow: 4px 8px 16px rgba(184, 70, 159, 0.76);
+}
+
+.card__top {
+  border-radius: 20%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 220px;
+          flex: 0 0 220px;
+  position: relative;
+  overflow: hidden;
+}
+/*фото товара*/
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.card__image:hover > img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 10px;
+}
+.card__prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.card__price {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.card__price:after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+.card__price--discount {
+  font-weight: 700;
+  font-size: 19px;
+  color: #414141;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+.card__price--discount::before {
+  content: "Со скидкой";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+.card__price--common {
+  font-weight: 400;
+  font-size: 17px;
+  color: #606060;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.card__price--common::before {
+  content: "Обычная";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+.card__title:hover {
+  color: rgb(132, 52, 207);
+}
+/*кнопка в корзину*/
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: rgb(132, 52, 207);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgb(193, 173, 240);
+  border-radius: 35px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: auto;
+}
+.card__add:hover {
+  border: 1px solid rgb(215, 173, 240);
+  background-color: rgb(132, 52, 207);
+  color: #fff;
+}
+
+.cart {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #180e1b;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 15px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cart:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.cart__image {
+	color: #fff;
+}
+.cart__num {
+  position: absolute;
+  background-color: rgb(132, 52, 207);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  top: -5px;
+  right: -5px;
+}
+/*корзина*/
+.popup {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.33);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-y: scroll;
+}
+.popup__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  min-height: 300px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: relative;
+}
+.popup__item {
+  border-bottom: 1px solid rgb(132, 52, 207);
+  padding: 15px;
+}
+.popup__item:last-of-type {
+  border-bottom: none;
+}
+.popup__title {
+  font-size: 22px;
+}
+.popup__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+.popup__product-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.popup__product-image {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+.popup__product-title {
+  max-width: 450px;
+  font-weight: 400px;
+}
+.popup__product-price {
+  font-size: 19px;
+  margin-right: 15px;
+}
+.popup__product-delete {
+  font-size: 10px;
+  padding: 5px;
+  cursor: pointer;
+  color: #241f20;
+}
+.popup__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5px;
+}
+.popup__cost-title {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #09080a;
+  text-align: right;
+}
+.popup__cost-value {
+  font-size: 20px;
+}
+.popup__close {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  color: rgba(54, 67, 100, 0.7);
+  font-size: 12px;
+}
+.popup__close:hover {
+  color: rgb(82, 54, 100);
+}
+.popup--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
